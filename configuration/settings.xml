@@ -24,6 +24,18 @@
     <profile>
       <id>fusesource.repo</id>
       <repositories>
+      <repository>
+          <id>martin_local</id>
+          <name>local_s2i</name>
+          <url>http://172.20.10.4:8081/nexus/content/repositories/martin_local</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
         <repository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
@@ -98,6 +110,18 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
+         <pluginRepository>
+          <id>martin_local</id>
+          <name>ms local</name>
+          <url>http://172.20.10.4:8081/nexus/content/repositories/martin_local</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
       </pluginRepositories>
     </profile>
   </profiles>
@@ -107,3 +131,4 @@
   </activeProfiles>
 
 </settings>
+
