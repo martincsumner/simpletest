@@ -27,7 +27,7 @@
       <repository>
           <id>martin_local</id>
           <name>local_s2i</name>
-          <url>http://10.0.1.152:8081/nexus/content/repositories/martin_local</url>
+          <url>http://172.20.10.4:8081/nexus/content/repositories/martin_local</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
